@@ -1,0 +1,308 @@
+@font-face { font-family: Roboto; src: url('../fonts/Roboto-Regular.ttf'); }
+@font-face { font-family: HoustanderDemo; src: url('../fonts/HoustanderDemo.ttf'); }
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  min-height: 100% !important;
+  height: 100%;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  font-weight: bold;
+}
+
+h6 {
+  margin: 50px 0 20px 0;
+}
+
+main {
+  transition: transform 300ms cubic-bezier(0.2, 0.7, 0.5, 1) 0s;
+}
+
+main.transform {
+  transform: translateX(-250px);
+}
+
+#logo {
+  font-family: HoustanderDemo;
+  font-size: 32px;
+  display: inline;
+  /* color: white; */
+}
+
+nav.navbar {
+  position: absolute;
+  height: 100px;
+  width: 100%;
+}
+
+.navbar-nav {
+  float: right;
+  margin: 20px 0 20px auto;
+  text-align: center;
+  font-size: 18px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: rgb(220, 220, 220);
+}
+
+nav button {
+  border: 0;
+  background-color: transparent;
+}
+
+/* To make the cursor pointer when hovering over the menu button */
+nav button:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+#home-bg {
+  background-image: url("../pics/mopsify-hbg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 70vh;
+  display: table;
+}
+
+#home-fg {
+  padding-top: 50px;
+  color: white;
+  text-shadow: #000 2px 2px 15px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#home-fg h3 {
+  margin-bottom: 30px;
+}
+
+#unreal {
+  font-size: 28px;
+}
+
+#unreal b {
+  vertical-align: middle;
+}
+
+div.small-section {
+  margin: 0;
+  padding: 20px 0;
+  text-align: center;
+}
+
+div.big-section {
+  margin: 0;
+  padding: 50px 0;
+  text-align: center;
+}
+
+div.avg-section {
+  margin: 0;
+  padding: 35px 0;
+  text-align: center;
+}
+
+div.gray-text {
+  color: #BEC8CE;
+}
+
+div.bg-green {
+  background-color: #40DF6D;
+  color: white;
+}
+
+div.col-4 {
+  text-align: right;
+}
+
+div.col-8 {
+  text-align: left;
+}
+
+#become-a-mopsist {
+  margin: 10px;
+  height: 40px;
+}
+
+#it-does-not {
+  font-size: 150px;
+  margin: 50px 0;
+}
+
+#sponsors img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 20px;
+  display: inline-block;
+}
+
+img.service-img {
+  width: 100%;
+  max-width: 100px;
+}
+
+#footer {
+  color: white;
+}
+
+ul#links {
+  margin: 0;
+  padding: 0;
+  overflow: none;
+}
+
+#links li {
+  list-style: none;
+  display: inline;
+  margin: 0 5px;
+}
+
+#links img {
+  width: 40px;
+}
+
+#the-end {
+  margin-top: 30px;
+}
+
+#the-end h6 {
+  margin: 5px 0;
+}
+
+div.popover {
+  text-align: center;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+@media (min-width: 992px) {
+  nav {
+    background-image: linear-gradient(to bottom, rgba(21,21,21,0.8), rgba(21,21,21,0));
+  }
+
+  nav button {
+    display: none;
+  }
+
+  div.col-8 {
+    padding-right: 180px;
+  }
+
+  #services-text {
+    padding: 20px 150px 40px 150px;
+  }
+}
+
+@media (max-width: 992px) {
+  #navbarNav {
+    display: none;
+  }
+
+  .nav-icon-bar {
+    display: block;
+    width: 24px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    object-fit: contain;
+  }
+
+  #it-does-not {
+    font-size: 120px;
+  }
+
+  /* NAV */
+  #right-menu {
+    display: block;
+    position: absolute;
+    left: auto;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 250px;
+    padding-top: 30px;
+    background-color: #f2f2f2;
+  }
+
+  #right-menu ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  #right-menu li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  #right-menu a {
+    display: block;
+    position: relative;
+    padding: 5px 10px 5px 30px;
+    border-bottom: 0;
+    border-left: 4px solid transparent;
+    font-weight: 300;
+    text-decoration: none;
+    background-color: transparent;
+    color: black;
+  }
+
+  #right-menu a:hover {
+    border-left: 4px solid #40DF6D;
+    color: #40DF6D;
+  }
+}
+
+@media (max-width: 768px) {
+  #it-does-not {
+    font-size: 90px;
+  }
+
+  div.col-4 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 668px) {
+  h1 {
+   font-size: 2em;
+  }
+
+  #it-does-not {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 510px) {
+  #it-does-not {
+    font-size: 60px;
+  }
+}
